@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+          http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="ApneeHattiDB">
+        <properties>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:mysql://103.145.51.51:3306/kwalitybasket?useSSL=false"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="IJv#c2Im5ODe4*x"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="spring.jpa.hibernate.ddl-auto" value="true"/>
+            <property name="spring.jpa.database-platform" value="org.hibernate.dialect.MySQLDialect"/>
+        </properties>
+       <!-- <properties>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/ApneeHatti?serverTimezone=UTC"/>
+            <property name="javax.persistence.jdbc.user" value="apneehatti"/>
+            <property name="javax.persistence.jdbc.password" value="ApneeHatti@123"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="spring.jpa.hibernate.ddl-auto" value="true"/>
+            <property name="spring.jpa.database-platform" value="org.hibernate.dialect.MySQLDialect"/>
+        </properties>-->
+    </persistence-unit>
+
+</persistence>
